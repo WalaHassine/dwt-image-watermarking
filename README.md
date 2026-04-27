@@ -146,3 +146,6 @@ Pourquoi le choix de Harr pour le watermarking:
 **Les deux critères clés évalués sont :**
 - **Invisibilité** : mesurée par le PSNR (doit être > 35 dB)
 - **Robustesse** : capacité de la signature à résister aux attaques (compression, filtrage, etc.)
+
+### Résultats 
+<img width="296" height="172" alt="image" src="https://github.com/user-attachments/assets/d6e3396c-6ec7-429b-b671-83ef4df5f50a" />
