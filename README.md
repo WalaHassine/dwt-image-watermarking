@@ -123,17 +123,17 @@ FIN
 ```
 ---
 
-Remarque : 
-Harr : type d'ondelette choisi pour la construction et decomposition d'images
-Pour chaque paire de pixels voisins, elle calcule :
-Moyenne (passe-bas)  (a + b) / 2   → sous-bande App (LL)
-Différence (passe-haut)  (a - b) / 2  → sous-bandes de détail
+Remarque :  
+- Harr : type d'ondelette choisi pour la construction et decomposition d'images  
+- Pour chaque paire de pixels voisins, elle calcule :  
+Moyenne (passe-bas)  (a + b) / 2   → sous-bande App (LL)  
+Différence (passe-haut)  (a - b) / 2  → sous-bandes de détail  
 
-Pourquoi le choix de Harr pour le watermarking: 
-- Très rapide à calculer
-- Simple à implémenter
-- Bonne localisation spatiale (elle détecte bien les contours)
-- Disponible directement dans Python avec pywt.dwt2(I, 'haar')
+Pourquoi le choix de Harr pour le watermarking:   
+- Très rapide à calculer  
+- Simple à implémenter  
+- Bonne localisation spatiale (elle détecte bien les contours)  
+- Disponible directement dans Python avec pywt.dwt2(I, 'haar')  
 
 
 ### Remarque sur le choix de la sous-bande
