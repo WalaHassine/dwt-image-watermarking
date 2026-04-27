@@ -11,6 +11,9 @@ def embed(I, w, alpha=0.05):
     Retourne Y (image tatouée) et son PSNR.
     """
     App, (D11, D12, D13) = pywt.dwt2(I, 'haar')
+    print("Image:", I.shape)
+    print("Watermark:", w.shape)
+    print("D12:", D12.shape)
 
     assert w.shape == D12.shape, (
         f"Taille incompatible : signature {w.shape} vs D12 {D12.shape}"
