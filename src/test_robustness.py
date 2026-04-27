@@ -10,7 +10,7 @@ from watermark_extract import extract
 from utils             import correlation, psnr
 
 # --- charger image de test ---
-I = np.array(Image.open("/home/wala/Documents/S2/SECURITY/TP/Watermarking/dwt-image-watermarking/assets/grayscale-image.png")
+I = np.array(Image.open("dwt-image-watermarking/assets/grayscale-image.png")
               .convert("L"), dtype=np.float64) / 255.0
 a, b = I.shape
 w = np.random.randint(0, 2, (
